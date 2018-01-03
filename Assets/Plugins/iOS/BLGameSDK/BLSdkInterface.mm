@@ -1,5 +1,5 @@
 
-#import "BLSdkInterface.h"
+
 #import "BLA3GameSDKDelegate.h"
 
 #if defined(__cplusplus)  
@@ -60,12 +60,12 @@ extern "C"{
 	}
 
 
-	void SdkOpenLoginView()
+	void BLSdkOpenLoginView()
 	{
 		[[BLGameSdk defaultGameSdk] showLoginView];
 	}
 
-	void SdkPay(
+	void BLSdkPay(
 		const char* itemId
 		, const char* outTradeNo
 		, const char* productName

@@ -61,9 +61,16 @@ extern const MethodInfo* MonoSingleton_1__ctor_m67305565_MethodInfo_var;
 extern const uint32_t BLSdkManager__ctor_m2829677652_MetadataUsageId;
 extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1246302594;
-extern Il2CppCodeGenString* _stringLiteral2440073412;
+extern Il2CppCodeGenString* _stringLiteral1580743040;
+extern Il2CppCodeGenString* _stringLiteral1267326016;
+extern Il2CppCodeGenString* _stringLiteral372029325;
+extern Il2CppCodeGenString* _stringLiteral104526448;
+extern Il2CppCodeGenString* _stringLiteral2513706167;
+extern Il2CppCodeGenString* _stringLiteral2521275683;
+extern Il2CppCodeGenString* _stringLiteral4055838506;
 extern const uint32_t BLSdkManager_initSDK_m1673278282_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral2383342477;
+extern const uint32_t BLSdkManager_SdkOpenLoginView_m3850923078_MetadataUsageId;
 extern Il2CppClass* DirCfgU5BU5D_t1589599465_il2cpp_TypeInfo_var;
 extern const uint32_t BundleConfig__ctor_m1367671489_MetadataUsageId;
 extern Il2CppClass* Dictionary_2_t2229327828_il2cpp_TypeInfo_var;
@@ -176,8 +183,10 @@ extern "C"  void Dictionary_2_Add_m1884940182_gshared (Dictionary_2_t1911545683 
 extern "C"  void BLSdkManager_initSDK_m1673278282 (BLSdkManager_t1387786699 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Debug::LogFormat(System.String,System.Object[])
 extern "C"  void Debug_LogFormat_m3816524933 (Il2CppObject * __this /* static, unused */, String_t* p0, ObjectU5BU5D_t3614634134* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String BLSdkManager::BilibiliSdkInit()
-extern "C"  String_t* BLSdkManager_BilibiliSdkInit_m4113727045 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String BLSdkManager::BLSdkInit(System.String,System.String,System.String,System.String,System.String)
+extern "C"  String_t* BLSdkManager_BLSdkInit_m2964139033 (Il2CppObject * __this /* static, unused */, String_t* ___gameid0, String_t* ___cpid1, String_t* ___serverid2, String_t* ___appkey3, String_t* ___sandboxKey4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void BLSdkManager::BLSdkOpenLoginView()
+extern "C"  void BLSdkManager_BLSdkOpenLoginView_m342583696 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.ScriptableObject::.ctor()
 extern "C"  void ScriptableObject__ctor_m2671490429 (ScriptableObject_t1975622470 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.Dictionary`2<EABRoot,System.String>::.ctor()
@@ -209,14 +218,34 @@ extern "C"  void BLSdkManager__ctor_m2829677652 (BLSdkManager_t1387786699 * __th
 		return;
 	}
 }
-extern "C" char* DEFAULT_CALL BilibiliSdkInit();
-// System.String BLSdkManager::BilibiliSdkInit()
-extern "C"  String_t* BLSdkManager_BilibiliSdkInit_m4113727045 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+extern "C" char* DEFAULT_CALL BLSdkInit(char*, char*, char*, char*, char*);
+// System.String BLSdkManager::BLSdkInit(System.String,System.String,System.String,System.String,System.String)
+extern "C"  String_t* BLSdkManager_BLSdkInit_m2964139033 (Il2CppObject * __this /* static, unused */, String_t* ___gameid0, String_t* ___cpid1, String_t* ___serverid2, String_t* ___appkey3, String_t* ___sandboxKey4, const MethodInfo* method)
 {
-	typedef char* (DEFAULT_CALL *PInvokeFunc) ();
+	typedef char* (DEFAULT_CALL *PInvokeFunc) (char*, char*, char*, char*, char*);
+
+	// Marshaling of parameter '___gameid0' to native representation
+	char* ____gameid0_marshaled = NULL;
+	____gameid0_marshaled = il2cpp_codegen_marshal_string(___gameid0);
+
+	// Marshaling of parameter '___cpid1' to native representation
+	char* ____cpid1_marshaled = NULL;
+	____cpid1_marshaled = il2cpp_codegen_marshal_string(___cpid1);
+
+	// Marshaling of parameter '___serverid2' to native representation
+	char* ____serverid2_marshaled = NULL;
+	____serverid2_marshaled = il2cpp_codegen_marshal_string(___serverid2);
+
+	// Marshaling of parameter '___appkey3' to native representation
+	char* ____appkey3_marshaled = NULL;
+	____appkey3_marshaled = il2cpp_codegen_marshal_string(___appkey3);
+
+	// Marshaling of parameter '___sandboxKey4' to native representation
+	char* ____sandboxKey4_marshaled = NULL;
+	____sandboxKey4_marshaled = il2cpp_codegen_marshal_string(___sandboxKey4);
 
 	// Native function invocation
-	char* returnValue = reinterpret_cast<PInvokeFunc>(BilibiliSdkInit)();
+	char* returnValue = reinterpret_cast<PInvokeFunc>(BLSdkInit)(____gameid0_marshaled, ____cpid1_marshaled, ____serverid2_marshaled, ____appkey3_marshaled, ____sandboxKey4_marshaled);
 
 	// Marshaling of return value back from native representation
 	String_t* _returnValue_unmarshaled = NULL;
@@ -225,6 +254,63 @@ extern "C"  String_t* BLSdkManager_BilibiliSdkInit_m4113727045 (Il2CppObject * _
 	// Marshaling cleanup of return value native representation
 	il2cpp_codegen_marshal_free(returnValue);
 	returnValue = NULL;
+
+	// Marshaling cleanup of parameter '___gameid0' native representation
+	il2cpp_codegen_marshal_free(____gameid0_marshaled);
+	____gameid0_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___cpid1' native representation
+	il2cpp_codegen_marshal_free(____cpid1_marshaled);
+	____cpid1_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___serverid2' native representation
+	il2cpp_codegen_marshal_free(____serverid2_marshaled);
+	____serverid2_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___appkey3' native representation
+	il2cpp_codegen_marshal_free(____appkey3_marshaled);
+	____appkey3_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___sandboxKey4' native representation
+	il2cpp_codegen_marshal_free(____sandboxKey4_marshaled);
+	____sandboxKey4_marshaled = NULL;
+
+	return _returnValue_unmarshaled;
+}
+extern "C" void DEFAULT_CALL BLSdkOpenLoginView();
+// System.Void BLSdkManager::BLSdkOpenLoginView()
+extern "C"  void BLSdkManager_BLSdkOpenLoginView_m342583696 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(BLSdkOpenLoginView)();
+
+}
+extern "C" char* DEFAULT_CALL BLSdkPay(char*);
+// System.String BLSdkManager::BLSdkPay(System.String)
+extern "C"  String_t* BLSdkManager_BLSdkPay_m1670119171 (Il2CppObject * __this /* static, unused */, String_t* ___json0, const MethodInfo* method)
+{
+	typedef char* (DEFAULT_CALL *PInvokeFunc) (char*);
+
+	// Marshaling of parameter '___json0' to native representation
+	char* ____json0_marshaled = NULL;
+	____json0_marshaled = il2cpp_codegen_marshal_string(___json0);
+
+	// Native function invocation
+	char* returnValue = reinterpret_cast<PInvokeFunc>(BLSdkPay)(____json0_marshaled);
+
+	// Marshaling of return value back from native representation
+	String_t* _returnValue_unmarshaled = NULL;
+	_returnValue_unmarshaled = il2cpp_codegen_marshal_string_result(returnValue);
+
+	// Marshaling cleanup of return value native representation
+	il2cpp_codegen_marshal_free(returnValue);
+	returnValue = NULL;
+
+	// Marshaling cleanup of parameter '___json0' native representation
+	il2cpp_codegen_marshal_free(____json0_marshaled);
+	____json0_marshaled = NULL;
 
 	return _returnValue_unmarshaled;
 }
@@ -250,21 +336,40 @@ extern "C"  void BLSdkManager_initSDK_m1673278282 (BLSdkManager_t1387786699 * __
 	}
 	String_t* V_0 = NULL;
 	{
-		// Debug.LogFormat ("init SDK csharp begin");
-		// Debug.LogFormat ("init SDK csharp begin");
+		// Debug.LogFormat ("csharp init SDK begin");
+		// Debug.LogFormat ("csharp init SDK begin");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral1246302594, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
-		// var s = BilibiliSdkInit();
-		String_t* L_0 = BLSdkManager_BilibiliSdkInit_m4113727045(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral1580743040, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		// var s = BLSdkInit("266", "1", "507", "b9f9fdf0ad3c49d6b2f1c77c7eae7a31", "7abee0aec6a14fb087f2a74bebc6191f");
+		// var s = BLSdkInit("266", "1", "507", "b9f9fdf0ad3c49d6b2f1c77c7eae7a31", "7abee0aec6a14fb087f2a74bebc6191f");
+		String_t* L_0 = BLSdkManager_BLSdkInit_m2964139033(NULL /*static, unused*/, _stringLiteral1267326016, _stringLiteral372029325, _stringLiteral104526448, _stringLiteral2513706167, _stringLiteral2521275683, /*hidden argument*/NULL);
 		V_0 = L_0;
-		// Debug.LogFormat ("init SDK csharp end {0}", s);
-		ObjectU5BU5D_t3614634134* L_1 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)1));
-		String_t* L_2 = V_0;
-		NullCheck(L_1);
-		ArrayElementTypeCheck (L_1, L_2);
-		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_2);
-		// Debug.LogFormat ("init SDK csharp end {0}", s);
-		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral2440073412, L_1, /*hidden argument*/NULL);
+		// Debug.LogFormat ("csharp init SDK end {0}");
+		// Debug.LogFormat ("csharp init SDK end {0}");
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral4055838506, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void BLSdkManager::SdkOpenLoginView()
+extern "C"  void BLSdkManager_SdkOpenLoginView_m3850923078 (BLSdkManager_t1387786699 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BLSdkManager_SdkOpenLoginView_m3850923078_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.LogFormat ("csharp SdkOpenLoginView");
+		// Debug.LogFormat ("csharp SdkOpenLoginView");
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral2383342477, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		// BLSdkOpenLoginView();
+		BLSdkManager_BLSdkOpenLoginView_m342583696(NULL /*static, unused*/, /*hidden argument*/NULL);
+		// Debug.LogFormat ("csharp SdkOpenLoginView");
+		// Debug.LogFormat ("csharp SdkOpenLoginView");
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral2383342477, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
 		// }
 		return;
 	}
