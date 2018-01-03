@@ -13,6 +13,8 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
+#import "BLGameSdk.h"
+
 #include <mach/mach_time.h>
 
 // MSAA_DEFAULT_SAMPLE_COUNT was moved to iPhone_GlesSupport.h
@@ -220,6 +222,9 @@ extern "C" void UnityRequestQuit()
 
     NSDictionary* notifData = [NSDictionary dictionaryWithObjects: values forKeys: keys];
     AppController_SendNotificationWithArg(kUnityOnOpenURL, notifData);
+
+    [[BLGameSdk defaultGameSdk] didGetToken:url];
+    
     return YES;
 }
 

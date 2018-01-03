@@ -1162,6 +1162,8 @@ extern Il2CppGenericClass IEnumerable_1_t3595756184_GenericClass;
 extern Il2CppGenericClass Transform_1_t772485183_GenericClass;
 extern Il2CppGenericClass Enumerator_t2571341323_GenericClass;
 extern Il2CppGenericClass ShimEnumerator_t1356441442_GenericClass;
+extern Il2CppGenericClass MonoSingleton_1_t1138452419_GenericClass;
+extern Il2CppGenericClass MonoSingleton_1_t2440115015_GenericClass;
 extern Il2CppGenericClass IEnumerator_1_t2171820532_GenericClass;
 extern Il2CppGenericClass IEnumerator_1_t3912238004_GenericClass;
 extern Il2CppGenericClass InternalEnumerator_1_t3000499143_GenericClass;
@@ -1299,11 +1301,12 @@ extern Il2CppGenericClass InvokableCall_1_t2917325908_GenericClass;
 extern Il2CppGenericClass InvokableCall_2_t915224443_GenericClass;
 extern Il2CppGenericClass InvokableCall_3_t3275246141_GenericClass;
 extern Il2CppGenericClass InvokableCall_4_t719478578_GenericClass;
+extern Il2CppGenericClass MonoSingleton_1_t3578120676_GenericClass;
 extern Il2CppGenericClass IComparer_1_t1676750663_GenericClass;
 extern Il2CppGenericClass IComparer_1_t389494294_GenericClass;
 extern Il2CppGenericClass IEqualityComparer_1_t1626665239_GenericClass;
 extern Il2CppGenericClass IEqualityComparer_1_t2063206230_GenericClass;
-extern Il2CppGenericClass* const s_Il2CppGenericTypes[1282] = 
+extern Il2CppGenericClass* const s_Il2CppGenericTypes[1285] = 
 {
 	&IEnumerator_1_t164973122_GenericClass,
 	&InternalEnumerator_1_t3548201557_GenericClass,
@@ -2446,6 +2449,8 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[1282] =
 	&Transform_1_t772485183_GenericClass,
 	&Enumerator_t2571341323_GenericClass,
 	&ShimEnumerator_t1356441442_GenericClass,
+	&MonoSingleton_1_t1138452419_GenericClass,
+	&MonoSingleton_1_t2440115015_GenericClass,
 	&IEnumerator_1_t2171820532_GenericClass,
 	&IEnumerator_1_t3912238004_GenericClass,
 	&InternalEnumerator_1_t3000499143_GenericClass,
@@ -2583,6 +2588,7 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[1282] =
 	&InvokableCall_2_t915224443_GenericClass,
 	&InvokableCall_3_t3275246141_GenericClass,
 	&InvokableCall_4_t719478578_GenericClass,
+	&MonoSingleton_1_t3578120676_GenericClass,
 	&IComparer_1_t1676750663_GenericClass,
 	&IComparer_1_t389494294_GenericClass,
 	&IEqualityComparer_1_t1626665239_GenericClass,

@@ -553,6 +553,7 @@ extern const uint32_t StateChanged_BeginInvoke_m1716538087_MetadataUsageId;
 extern const uint32_t Debug_get_logger_m4173808038_MetadataUsageId;
 extern Il2CppClass* ILogger_t1425954571_il2cpp_TypeInfo_var;
 extern const uint32_t Debug_Log_m920475918_MetadataUsageId;
+extern const uint32_t Debug_LogFormat_m3816524933_MetadataUsageId;
 extern const uint32_t Debug_LogError_m3715728798_MetadataUsageId;
 extern Il2CppClass* ILogHandler_t264057413_il2cpp_TypeInfo_var;
 extern const uint32_t Debug_LogException_m1861430175_MetadataUsageId;
@@ -7441,6 +7442,25 @@ extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused *
 		Il2CppObject * L_1 = ___message0;
 		NullCheck(L_0);
 		InterfaceActionInvoker2< int32_t, Il2CppObject * >::Invoke(0 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.Object) */, ILogger_t1425954571_il2cpp_TypeInfo_var, L_0, 3, L_1);
+		return;
+	}
+}
+// System.Void UnityEngine.Debug::LogFormat(System.String,System.Object[])
+extern "C"  void Debug_LogFormat_m3816524933 (Il2CppObject * __this /* static, unused */, String_t* ___format0, ObjectU5BU5D_t3614634134* ___args1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Debug_LogFormat_m3816524933_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Il2CppObject * L_0 = Debug_get_logger_m4173808038(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_1 = ___format0;
+		ObjectU5BU5D_t3614634134* L_2 = ___args1;
+		NullCheck(L_0);
+		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t3614634134* >::Invoke(1 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_t1425954571_il2cpp_TypeInfo_var, L_0, 3, L_1, L_2);
 		return;
 	}
 }

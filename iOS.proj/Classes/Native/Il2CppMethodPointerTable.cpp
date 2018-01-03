@@ -7564,6 +7564,7 @@ extern "C" void StateChanged_BeginInvoke_m1716538087 ();
 extern "C" void StateChanged_EndInvoke_m2186648314 ();
 extern "C" void Debug_get_logger_m4173808038 ();
 extern "C" void Debug_Log_m920475918 ();
+extern "C" void Debug_LogFormat_m3816524933 ();
 extern "C" void Debug_LogError_m3715728798 ();
 extern "C" void Debug_LogException_m1861430175 ();
 extern "C" void Debug__cctor_m2981642087 ();
@@ -7932,6 +7933,7 @@ extern "C" void Logger_set_filterLogType_m1452353615 ();
 extern "C" void Logger_IsLogTypeAllowed_m1750132386 ();
 extern "C" void Logger_GetString_m4086587133 ();
 extern "C" void Logger_Log_m3587255568 ();
+extern "C" void Logger_LogFormat_m2672129951 ();
 extern "C" void Logger_LogFormat_m193464629 ();
 extern "C" void Logger_LogException_m206035446 ();
 extern "C" void Mathf_Abs_m1942863256 ();
@@ -8347,10 +8349,14 @@ extern "C" void FieldWithTarget_set_doStatic_m3820651670 ();
 extern "C" void FieldWithTarget_get_staticString_m3599225804 ();
 extern "C" void FieldWithTarget_set_staticString_m2234360111 ();
 extern "C" void FieldWithTarget_GetValue_m3773769385 ();
+extern "C" void BLSdkManager__ctor_m2829677652 ();
+extern "C" void BLSdkManager_BilibiliSdkInit_m4113727045 ();
+extern "C" void BLSdkManager_Start_m2737228312 ();
+extern "C" void BLSdkManager_initSDK_m1673278282 ();
 extern "C" void BundleConfig__ctor_m1367671489 ();
 extern "C" void BundleConfig__cctor_m1524249664 ();
 extern "C" void DirCfg__ctor_m1059223539 ();
-extern const Il2CppMethodPointer g_MethodPointers[8336] = 
+extern const Il2CppMethodPointer g_MethodPointers[8342] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -15902,6 +15908,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8336] =
 	StateChanged_EndInvoke_m2186648314,
 	Debug_get_logger_m4173808038,
 	Debug_Log_m920475918,
+	Debug_LogFormat_m3816524933,
 	Debug_LogError_m3715728798,
 	Debug_LogException_m1861430175,
 	Debug__cctor_m2981642087,
@@ -16270,6 +16277,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8336] =
 	Logger_IsLogTypeAllowed_m1750132386,
 	Logger_GetString_m4086587133,
 	Logger_Log_m3587255568,
+	Logger_LogFormat_m2672129951,
 	Logger_LogFormat_m193464629,
 	Logger_LogException_m206035446,
 	Mathf_Abs_m1942863256,
@@ -16685,6 +16693,10 @@ extern const Il2CppMethodPointer g_MethodPointers[8336] =
 	FieldWithTarget_get_staticString_m3599225804,
 	FieldWithTarget_set_staticString_m2234360111,
 	FieldWithTarget_GetValue_m3773769385,
+	BLSdkManager__ctor_m2829677652,
+	BLSdkManager_BilibiliSdkInit_m4113727045,
+	BLSdkManager_Start_m2737228312,
+	BLSdkManager_initSDK_m1673278282,
 	BundleConfig__ctor_m1367671489,
 	BundleConfig__cctor_m1524249664,
 	DirCfg__ctor_m1059223539,

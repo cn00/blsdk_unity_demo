@@ -190,10 +190,10 @@ struct IDictionary_t596158605;
 struct Logger_t3328995178;
 // UnityEngine.ILogHandler
 struct ILogHandler_t264057413;
-// UnityEngine.Object
-struct Object_t1021602117;
 // System.Object[]
 struct ObjectU5BU5D_t3614634134;
+// UnityEngine.Object
+struct Object_t1021602117;
 // System.Exception
 struct Exception_t1927440687;
 // UnityEngine.MonoBehaviour
@@ -432,6 +432,7 @@ extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
 extern Il2CppClass* ILogHandler_t264057413_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral104529068;
 extern const uint32_t Logger_Log_m3587255568_MetadataUsageId;
+extern const uint32_t Logger_LogFormat_m2672129951_MetadataUsageId;
 extern const uint32_t Logger_LogFormat_m193464629_MetadataUsageId;
 extern const uint32_t Logger_LogException_m206035446_MetadataUsageId;
 extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
@@ -2733,6 +2734,37 @@ extern "C"  void Logger_Log_m3587255568 (Logger_t3328995178 * __this, int32_t __
 	}
 
 IL_002e:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.Logger::LogFormat(UnityEngine.LogType,System.String,System.Object[])
+extern "C"  void Logger_LogFormat_m2672129951 (Logger_t3328995178 * __this, int32_t ___logType0, String_t* ___format1, ObjectU5BU5D_t3614634134* ___args2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Logger_LogFormat_m2672129951_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___logType0;
+		bool L_1 = Logger_IsLogTypeAllowed_m1750132386(__this, L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		Il2CppObject * L_2 = Logger_get_logHandler_m4190583509(__this, /*hidden argument*/NULL);
+		int32_t L_3 = ___logType0;
+		String_t* L_4 = ___format1;
+		ObjectU5BU5D_t3614634134* L_5 = ___args2;
+		NullCheck(L_2);
+		InterfaceActionInvoker4< int32_t, Object_t1021602117 *, String_t*, ObjectU5BU5D_t3614634134* >::Invoke(0 /* System.Void UnityEngine.ILogHandler::LogFormat(UnityEngine.LogType,UnityEngine.Object,System.String,System.Object[]) */, ILogHandler_t264057413_il2cpp_TypeInfo_var, L_2, L_3, (Object_t1021602117 *)NULL, L_4, L_5);
+	}
+
+IL_001c:
 	{
 		return;
 	}

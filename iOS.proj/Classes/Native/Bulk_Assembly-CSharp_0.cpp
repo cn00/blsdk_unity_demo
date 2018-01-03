@@ -17,18 +17,32 @@
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
 #include "AssemblyU2DCSharp_U3CModuleU3E3783534214.h"
-#include "AssemblyU2DCSharp_BundleConfig1009563654.h"
+#include "AssemblyU2DCSharp_BLSdkManager1387786699.h"
 #include "mscorlib_System_Void1841601450.h"
+#include "AssemblyU2DCSharp_MonoSingleton_1_gen1138452419.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "AssemblyU2DCSharp_BundleConfig1009563654.h"
 #include "AssemblyU2DCSharp_BundleConfig_DirCfg1402160952.h"
 #include "UnityEngine_UnityEngine_ScriptableObject1975622470.h"
 #include "AssemblyU2DCSharp_EABRoot2557847040.h"
-#include "mscorlib_System_String2029220233.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "AssemblyU2DCSharp_ESceneRoot513180667.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g2229327828.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1251316621.h"
 #include "mscorlib_System_Boolean3825574718.h"
 
+// BLSdkManager
+struct BLSdkManager_t1387786699;
+// MonoSingleton`1<BLSdkManager>
+struct MonoSingleton_1_t1138452419;
+// MonoSingleton`1<System.Object>
+struct MonoSingleton_1_t2440115015;
+// System.String
+struct String_t;
+// System.Object[]
+struct ObjectU5BU5D_t3614634134;
+// System.Object
+struct Il2CppObject;
 // BundleConfig
 struct BundleConfig_t1009563654;
 // UnityEngine.ScriptableObject
@@ -39,14 +53,17 @@ struct DirCfg_t1402160952;
 struct Dictionary_2_t2229327828;
 // System.Collections.Generic.Dictionary`2<EABRoot,System.Object>
 struct Dictionary_2_t2889556890;
-// System.String
-struct String_t;
-// System.Object
-struct Il2CppObject;
 // System.Collections.Generic.Dictionary`2<ESceneRoot,System.String>
 struct Dictionary_2_t1251316621;
 // System.Collections.Generic.Dictionary`2<ESceneRoot,System.Object>
 struct Dictionary_2_t1911545683;
+extern const MethodInfo* MonoSingleton_1__ctor_m67305565_MethodInfo_var;
+extern const uint32_t BLSdkManager__ctor_m2829677652_MetadataUsageId;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1246302594;
+extern Il2CppCodeGenString* _stringLiteral2440073412;
+extern const uint32_t BLSdkManager_initSDK_m1673278282_MetadataUsageId;
 extern Il2CppClass* DirCfgU5BU5D_t1589599465_il2cpp_TypeInfo_var;
 extern const uint32_t BundleConfig__ctor_m1367671489_MetadataUsageId;
 extern Il2CppClass* Dictionary_2_t2229327828_il2cpp_TypeInfo_var;
@@ -66,6 +83,43 @@ extern const uint32_t BundleConfig__cctor_m1524249664_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral371857150;
 extern const uint32_t DirCfg__ctor_m1059223539_MetadataUsageId;
 
+// System.Object[]
+struct ObjectU5BU5D_t3614634134  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Il2CppObject * m_Items[1];
+
+public:
+	inline Il2CppObject * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Il2CppObject ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Il2CppObject * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Il2CppObject ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // BundleConfig/DirCfg[]
 struct DirCfgU5BU5D_t1589599465  : public Il2CppArray
 {
@@ -105,6 +159,8 @@ public:
 };
 
 
+// System.Void MonoSingleton`1<System.Object>::.ctor()
+extern "C"  void MonoSingleton_1__ctor_m437210476_gshared (MonoSingleton_1_t2440115015 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Dictionary`2<EABRoot,System.Object>::.ctor()
 extern "C"  void Dictionary_2__ctor_m260734337_gshared (Dictionary_2_t2889556890 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Dictionary`2<EABRoot,System.Object>::Add(!0,!1)
@@ -114,6 +170,14 @@ extern "C"  void Dictionary_2__ctor_m867520798_gshared (Dictionary_2_t1911545683
 // System.Void System.Collections.Generic.Dictionary`2<ESceneRoot,System.Object>::Add(!0,!1)
 extern "C"  void Dictionary_2_Add_m1884940182_gshared (Dictionary_2_t1911545683 * __this, int32_t p0, Il2CppObject * p1, const MethodInfo* method);
 
+// System.Void MonoSingleton`1<BLSdkManager>::.ctor()
+#define MonoSingleton_1__ctor_m67305565(__this, method) ((  void (*) (MonoSingleton_1_t1138452419 *, const MethodInfo*))MonoSingleton_1__ctor_m437210476_gshared)(__this, method)
+// System.Void BLSdkManager::initSDK()
+extern "C"  void BLSdkManager_initSDK_m1673278282 (BLSdkManager_t1387786699 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Debug::LogFormat(System.String,System.Object[])
+extern "C"  void Debug_LogFormat_m3816524933 (Il2CppObject * __this /* static, unused */, String_t* p0, ObjectU5BU5D_t3614634134* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String BLSdkManager::BilibiliSdkInit()
+extern "C"  String_t* BLSdkManager_BilibiliSdkInit_m4113727045 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.ScriptableObject::.ctor()
 extern "C"  void ScriptableObject__ctor_m2671490429 (ScriptableObject_t1975622470 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.Dictionary`2<EABRoot,System.String>::.ctor()
@@ -131,6 +195,80 @@ extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodIn
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void BLSdkManager::.ctor()
+extern "C"  void BLSdkManager__ctor_m2829677652 (BLSdkManager_t1387786699 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BLSdkManager__ctor_m2829677652_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		MonoSingleton_1__ctor_m67305565(__this, /*hidden argument*/MonoSingleton_1__ctor_m67305565_MethodInfo_var);
+		return;
+	}
+}
+extern "C" char* DEFAULT_CALL BilibiliSdkInit();
+// System.String BLSdkManager::BilibiliSdkInit()
+extern "C"  String_t* BLSdkManager_BilibiliSdkInit_m4113727045 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef char* (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	char* returnValue = reinterpret_cast<PInvokeFunc>(BilibiliSdkInit)();
+
+	// Marshaling of return value back from native representation
+	String_t* _returnValue_unmarshaled = NULL;
+	_returnValue_unmarshaled = il2cpp_codegen_marshal_string_result(returnValue);
+
+	// Marshaling cleanup of return value native representation
+	il2cpp_codegen_marshal_free(returnValue);
+	returnValue = NULL;
+
+	return _returnValue_unmarshaled;
+}
+// System.Void BLSdkManager::Start()
+extern "C"  void BLSdkManager_Start_m2737228312 (BLSdkManager_t1387786699 * __this, const MethodInfo* method)
+{
+	{
+		// initSDK();
+		// initSDK();
+		BLSdkManager_initSDK_m1673278282(__this, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void BLSdkManager::initSDK()
+extern "C"  void BLSdkManager_initSDK_m1673278282 (BLSdkManager_t1387786699 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BLSdkManager_initSDK_m1673278282_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		// Debug.LogFormat ("init SDK csharp begin");
+		// Debug.LogFormat ("init SDK csharp begin");
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral1246302594, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		// var s = BilibiliSdkInit();
+		String_t* L_0 = BLSdkManager_BilibiliSdkInit_m4113727045(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_0;
+		// Debug.LogFormat ("init SDK csharp end {0}", s);
+		ObjectU5BU5D_t3614634134* L_1 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_2 = V_0;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_2);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_2);
+		// Debug.LogFormat ("init SDK csharp end {0}", s);
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral2440073412, L_1, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
 // System.Void BundleConfig::.ctor()
 extern "C"  void BundleConfig__ctor_m1367671489 (BundleConfig_t1009563654 * __this, const MethodInfo* method)
 {

@@ -4386,6 +4386,16 @@ extern const Il2CppType Enumerator_t2571341323_0_0_0 = { &Enumerator_t2571341323
 Il2CppGenericClass ShimEnumerator_t1356441442_GenericClass = { 158, { &GenInst_ESceneRoot_t513180667_0_0_0_String_t_0_0_0, NULL }, NULL };
 extern const Il2CppType ShimEnumerator_t1356441442_0_0_0 = { &ShimEnumerator_t1356441442_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
+extern const Il2CppGenericInst GenInst_BLSdkManager_t1387786699_0_0_0;
+Il2CppGenericClass MonoSingleton_1_t1138452419_GenericClass = { 1402, { &GenInst_BLSdkManager_t1387786699_0_0_0, NULL }, NULL };
+extern const Il2CppType MonoSingleton_1_t1138452419_0_0_0 = { &MonoSingleton_1_t1138452419_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppType BLSdkManager_t1387786699_0_0_0 = { (void*)1401, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType BLSdkManager_t1387786699_1_0_0 = { (void*)1401, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+Il2CppGenericClass MonoSingleton_1_t2440115015_GenericClass = { 1402, { &GenInst_Il2CppObject_0_0_0, NULL }, NULL };
+extern const Il2CppType MonoSingleton_1_t2440115015_0_0_0 = { &MonoSingleton_1_t2440115015_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
 extern const Il2CppType U3CModuleU3E_t3783534214_0_0_0 = { (void*)0, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType U3CModuleU3E_t3783534214_1_0_0 = { (void*)0, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
@@ -10364,6 +10374,16 @@ extern const Il2CppType DirCfg_t1402160952_0_0_0;
 extern const Il2CppType DirCfgU5BU5D_t1589599465_0_0_6 = { (void*)&DirCfg_t1402160952_0_0_0, 6, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
 extern const Il2CppType DirCfgU5BU5D_t1589599465_0_0_0 = { (void*)&DirCfg_t1402160952_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
 
+extern const Il2CppType MonoSingleton_1_t3179822507_0_0_0 = { (void*)1402, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType MonoSingleton_1_t3179822507_1_0_0 = { (void*)1402, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType MonoSingleton_1_t3179822507_gp_0_0_0_0 = { (void*)185, 0, IL2CPP_TYPE_VAR, 0, 0, 0 };
+extern const Il2CppType MonoSingleton_1_t3179822507_gp_0_0_0_17 = { (void*)185, 17, IL2CPP_TYPE_VAR, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_MonoSingleton_1_t3179822507_gp_0_0_0_0;
+Il2CppGenericClass MonoSingleton_1_t3578120676_GenericClass = { 1402, { &GenInst_MonoSingleton_1_t3179822507_gp_0_0_0_0, NULL }, NULL };
+extern const Il2CppType MonoSingleton_1_t3578120676_0_0_0 = { &MonoSingleton_1_t3578120676_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
 Il2CppGenericClass IComparer_1_t1676750663_GenericClass = { 164, { &GenInst_DefaultComparer_t3074655092_gp_0_0_0_0, NULL }, NULL };
 extern const Il2CppType IComparer_1_t1676750663_0_0_0 = { &IComparer_1_t1676750663_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
@@ -10414,7 +10434,7 @@ extern const Il2CppType TypeTagU5BU5D_t582616213_0_0_0 = { (void*)&TypeTag_t1412
 
 extern const Il2CppType ITrackingHandler_t2759960940_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t194660197_0_0_0 = { (void*)&ITrackingHandler_t2759960940_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[5600] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[5609] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -11702,6 +11722,9 @@ extern const Il2CppType* const  g_Il2CppTypeTable[5600] =
 	&Transform_1_t772485183_0_0_0,
 	&Enumerator_t2571341323_0_0_0,
 	&ShimEnumerator_t1356441442_0_0_0,
+	&MonoSingleton_1_t1138452419_0_0_0,
+	&BLSdkManager_t1387786699_0_0_0,
+	&MonoSingleton_1_t2440115015_0_0_0,
 	&U3CModuleU3E_t3783534214_0_0_0,
 	&U3CModuleU3E_t3783534214_1_0_0,
 	&Il2CppObject_1_0_0,
@@ -15963,6 +15986,12 @@ extern const Il2CppType* const  g_Il2CppTypeTable[5600] =
 	&Dictionary_2_t2229327828_0_0_22,
 	&Dictionary_2_t1251316621_0_0_22,
 	&DirCfg_t1402160952_1_0_0,
+	&BLSdkManager_t1387786699_1_0_0,
+	&MonoSingleton_1_t3179822507_0_0_0,
+	&MonoSingleton_1_t3179822507_1_0_0,
+	&MonoSingleton_1_t3179822507_gp_0_0_0_0,
+	&MonoSingleton_1_t3179822507_gp_0_0_0_17,
+	&MonoSingleton_1_t3578120676_0_0_0,
 	&IEnumerator_1_t1705424029_0_0_0,
 	&IEnumerator_1_t4085313661_0_0_0,
 	&IList_1_t260801773_0_0_0,

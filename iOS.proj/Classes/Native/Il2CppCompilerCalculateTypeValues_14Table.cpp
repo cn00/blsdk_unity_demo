@@ -16,6 +16,7 @@
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "AssemblyU2DCSharp_BundleConfig_DirCfg1402160952.h"
+#include "AssemblyU2DCSharp_BLSdkManager1387786699.h"
 
 
 
@@ -34,6 +35,12 @@ extern const int32_t g_FieldOffsetTable1400[3] =
 	DirCfg_t1402160952::get_offset_of_dir_0(),
 	DirCfg_t1402160952::get_offset_of_include_1(),
 	DirCfg_t1402160952::get_offset_of_preDownload_2(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1401 = { sizeof (BLSdkManager_t1387786699), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1402 = { 0, 0, 0, 0 };
+extern const int32_t g_FieldOffsetTable1402[1] = 
+{
+	0,
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
