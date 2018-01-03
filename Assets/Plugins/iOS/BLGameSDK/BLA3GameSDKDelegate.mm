@@ -90,7 +90,7 @@
             
             if (code == 0) {
                 NSNumber *coin = result[@"coin"];
-                [self performSelectorOnMainThread:@selector(addGameMoney:) withObject:coin waitUntilDone:nil];
+                [self performSelectorOnMainThread:@selector(addGameMoney:) withObject:coin waitUntilDone:NO];
                 
             }
         }

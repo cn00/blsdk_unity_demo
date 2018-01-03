@@ -292,18 +292,36 @@ public class BuildScript
 
     #region 🍎安装包
 
-    [MenuItem("Build/iOS (iL2cpp proj)")]
+    [MenuItem("Build/iOS Dev (iL2cpp proj)")]
     static void ExportIOSProj()
     {
         var version = new FGVersion(PlayerSettings.bundleVersion);
         version.Minor += 1;
         version.Patch = 0;
         PlayerSettings.bundleVersion = version.ToString();
+        PlayerSettings.iOS.sdkVersion = iOSSdkVersion.DeviceSDK;
         PlayerSettings.iOS.buildNumber = (int.Parse(PlayerSettings.iOS.buildNumber) + 1).ToString();
         var versionCode = int.Parse(PlayerSettings.iOS.buildNumber);
 
-        string target_dir = "iOS.proj"; // + PlayerSettings.bundleVersion;
-        GenericBuild(SCENES, target_dir, BuildTargetGroup.iOS, BuildTarget.iOS, BuildOptions.None);
+        string target_dir = "ios.proj";
+        var option = BuildOptions.AllowDebugging | BuildOptions.EnableHeadlessMode | BuildOptions.SymlinkLibraries;
+        GenericBuild(SCENES, target_dir, BuildTargetGroup.iOS, BuildTarget.iOS, option);
+    }
+
+    [MenuItem("Build/iOS Sim (iL2cpp proj)")]
+    static void ExportIOSProjSim()
+    {
+        var version = new FGVersion(PlayerSettings.bundleVersion);
+        version.Minor += 1;
+        version.Patch = 0;
+        PlayerSettings.bundleVersion = version.ToString();
+        PlayerSettings.iOS.sdkVersion = iOSSdkVersion.SimulatorSDK;
+        PlayerSettings.iOS.buildNumber = (int.Parse(PlayerSettings.iOS.buildNumber) + 1).ToString();
+        var versionCode = int.Parse(PlayerSettings.iOS.buildNumber);
+
+        string target_dir = "ios.sim.proj";
+        var option = BuildOptions.AllowDebugging | BuildOptions.EnableHeadlessMode | BuildOptions.SymlinkLibraries;
+        GenericBuild(SCENES, target_dir, BuildTargetGroup.iOS, BuildTarget.iOS, option);
     }
 
     [MenuItem("Build/Mac OS X")]

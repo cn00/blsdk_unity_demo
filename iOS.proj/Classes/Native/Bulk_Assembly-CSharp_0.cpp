@@ -29,7 +29,6 @@
 #include "AssemblyU2DCSharp_ESceneRoot513180667.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g2229327828.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1251316621.h"
-#include "mscorlib_System_Boolean3825574718.h"
 
 // BLSdkManager
 struct BLSdkManager_t1387786699;
@@ -59,6 +58,7 @@ struct Dictionary_2_t1251316621;
 struct Dictionary_2_t1911545683;
 extern const MethodInfo* MonoSingleton_1__ctor_m67305565_MethodInfo_var;
 extern const uint32_t BLSdkManager__ctor_m2829677652_MetadataUsageId;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1580743040;
@@ -87,7 +87,6 @@ extern Il2CppCodeGenString* _stringLiteral1594932300;
 extern Il2CppCodeGenString* _stringLiteral2309168760;
 extern Il2CppCodeGenString* _stringLiteral3430668515;
 extern const uint32_t BundleConfig__cctor_m1524249664_MetadataUsageId;
-extern Il2CppCodeGenString* _stringLiteral371857150;
 extern const uint32_t DirCfg__ctor_m1059223539_MetadataUsageId;
 
 // System.Object[]
@@ -318,10 +317,7 @@ extern "C"  String_t* BLSdkManager_BLSdkPay_m1670119171 (Il2CppObject * __this /
 extern "C"  void BLSdkManager_Start_m2737228312 (BLSdkManager_t1387786699 * __this, const MethodInfo* method)
 {
 	{
-		// initSDK();
-		// initSDK();
 		BLSdkManager_initSDK_m1673278282(__this, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -336,18 +332,19 @@ extern "C"  void BLSdkManager_initSDK_m1673278282 (BLSdkManager_t1387786699 * __
 	}
 	String_t* V_0 = NULL;
 	{
-		// Debug.LogFormat ("csharp init SDK begin");
-		// Debug.LogFormat ("csharp init SDK begin");
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_0 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		V_0 = L_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral1580743040, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
-		// var s = BLSdkInit("266", "1", "507", "b9f9fdf0ad3c49d6b2f1c77c7eae7a31", "7abee0aec6a14fb087f2a74bebc6191f");
-		// var s = BLSdkInit("266", "1", "507", "b9f9fdf0ad3c49d6b2f1c77c7eae7a31", "7abee0aec6a14fb087f2a74bebc6191f");
-		String_t* L_0 = BLSdkManager_BLSdkInit_m2964139033(NULL /*static, unused*/, _stringLiteral1267326016, _stringLiteral372029325, _stringLiteral104526448, _stringLiteral2513706167, _stringLiteral2521275683, /*hidden argument*/NULL);
-		V_0 = L_0;
-		// Debug.LogFormat ("csharp init SDK end {0}");
-		// Debug.LogFormat ("csharp init SDK end {0}");
-		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral4055838506, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
-		// }
+		String_t* L_1 = BLSdkManager_BLSdkInit_m2964139033(NULL /*static, unused*/, _stringLiteral1267326016, _stringLiteral372029325, _stringLiteral104526448, _stringLiteral2513706167, _stringLiteral2521275683, /*hidden argument*/NULL);
+		V_0 = L_1;
+		ObjectU5BU5D_t3614634134* L_2 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_3 = V_0;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_3);
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral4055838506, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -361,16 +358,10 @@ extern "C"  void BLSdkManager_SdkOpenLoginView_m3850923078 (BLSdkManager_t138778
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.LogFormat ("csharp SdkOpenLoginView");
-		// Debug.LogFormat ("csharp SdkOpenLoginView");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral2383342477, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
-		// BLSdkOpenLoginView();
 		BLSdkManager_BLSdkOpenLoginView_m342583696(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// Debug.LogFormat ("csharp SdkOpenLoginView");
-		// Debug.LogFormat ("csharp SdkOpenLoginView");
 		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral2383342477, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -384,7 +375,6 @@ extern "C"  void BundleConfig__ctor_m1367671489 (BundleConfig_t1009563654 * __th
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// public DirCfg[] mDirs = new DirCfg[0];
 		__this->set_mDirs_2(((DirCfgU5BU5D_t1589599465*)SZArrayNew(DirCfgU5BU5D_t1589599465_il2cpp_TypeInfo_var, (uint32_t)0)));
 		ScriptableObject__ctor_m2671490429(__this, /*hidden argument*/NULL);
 		return;
@@ -402,7 +392,6 @@ extern "C"  void BundleConfig__cctor_m1524249664 (Il2CppObject * __this /* stati
 	Dictionary_2_t2229327828 * V_0 = NULL;
 	Dictionary_2_t1251316621 * V_1 = NULL;
 	{
-		// public static Dictionary<EABRoot, string> ABResRoots = new Dictionary<EABRoot, string> {
 		Dictionary_2_t2229327828 * L_0 = (Dictionary_2_t2229327828 *)il2cpp_codegen_object_new(Dictionary_2_t2229327828_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m592694258(L_0, /*hidden argument*/Dictionary_2__ctor_m592694258_MethodInfo_var);
 		V_0 = L_0;
@@ -426,7 +415,6 @@ extern "C"  void BundleConfig__cctor_m1524249664 (Il2CppObject * __this /* stati
 		Dictionary_2_Add_m4261180970(L_6, 7, _stringLiteral3430668515, /*hidden argument*/Dictionary_2_Add_m4261180970_MethodInfo_var);
 		Dictionary_2_t2229327828 * L_7 = V_0;
 		((BundleConfig_t1009563654_StaticFields*)BundleConfig_t1009563654_il2cpp_TypeInfo_var->static_fields)->set_ABResRoots_4(L_7);
-		// public static Dictionary<ESceneRoot, string> ABSceneRoots = new Dictionary<ESceneRoot, string> {
 		Dictionary_2_t1251316621 * L_8 = (Dictionary_2_t1251316621 *)il2cpp_codegen_object_new(Dictionary_2_t1251316621_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m2717960531(L_8, /*hidden argument*/Dictionary_2__ctor_m2717960531_MethodInfo_var);
 		V_1 = L_8;
@@ -448,12 +436,9 @@ extern "C"  void DirCfg__ctor_m1059223539 (DirCfg_t1402160952 * __this, const Me
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// public string dir = "";
-		__this->set_dir_0(_stringLiteral371857150);
-		// public bool include = false;
-		__this->set_include_1((bool)0);
-		// public bool preDownload = false;
-		__this->set_preDownload_2((bool)0);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_0 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_dir_0(L_0);
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		return;
 	}
