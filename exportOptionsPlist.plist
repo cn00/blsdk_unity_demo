@@ -5,6 +5,11 @@
     <key>method</key>
     <string>app-store</string>
     <key>teamID</key>
-    <string>YOUR_TEN_CHARACTER_TEAM_ID</string>
+    <string>UL9WJVVZ42</string>
+    <key>provisioningProfiles</key>
+    <dict>
+    	<key>com.bilibili.a3</key>
+    	<string>A3_dis</string>
+    </dict>
 </dict>
 </plist>
