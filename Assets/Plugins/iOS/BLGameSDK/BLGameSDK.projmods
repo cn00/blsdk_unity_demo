@@ -18,10 +18,7 @@
         },
         {
             "LD_RUNPATH_SEARCH_PATHS":{
-                "Release":"NO",
-                "ReleaseForProfiling":"NO",
-                "ReleaseForRunning":"NO",
-                "Debug":"NO",
+                "all":"@executable_path/Famewoks",
             }
         },
     ],
