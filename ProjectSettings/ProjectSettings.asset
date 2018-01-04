@@ -119,7 +119,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.30.0
+  bundleVersion: 0.8.0
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -141,7 +141,7 @@ PlayerSettings:
     Standalone: com.bilibili.a3test1
     iOS: com.bilibili.a3
   buildNumber:
-    iOS: 30
+    iOS: 65
   AndroidBundleVersionCode: 5
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
@@ -213,7 +213,7 @@ PlayerSettings:
   appleDeveloperTeamID: 
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
-  appleEnableAutomaticSigning: 0
+  appleEnableAutomaticSigning: 2
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}

@@ -1,0 +1,60 @@
+{
+    "group": "Resources",
+    "compiler_flags": [
+    ],
+    "linker_flags": [
+        "-ObjC", 
+        "-lresolv"
+    ],
+    "embed_binaries": [],
+    "overwriteBuildSetting":[
+        {
+            "ENABLE_BITCODE":{
+                "Release":"NO",
+                "ReleaseForProfiling":"NO",
+                "ReleaseForRunning":"NO",
+                "Debug":"NO",
+            }
+        },
+        {
+            "LD_RUNPATH_SEARCH_PATHS":{
+                "Release":"NO",
+                "ReleaseForProfiling":"NO",
+                "ReleaseForRunning":"NO",
+                "Debug":"NO",
+            }
+        },
+    ],
+    "libs": [],
+    "frameworks": [],
+    "headerpaths": [],
+    "plist": {
+        "urltype" : [
+            {
+                "role": "Editor",
+                "name" : "biligame",
+                "schemes":[
+                    "biligame",
+                    "biligame2"
+                ]
+            },
+            {
+                "name" : "wechat",
+                "schemes":["wechat123456789"]
+            }
+        ],
+        "other":{
+            "test1": "test1Value",
+            "test2": "test2Value",
+        }
+    },
+    "files":   [
+    	"BlGameSdkRes/countryList.plist",
+        "BlGameSdkRes/service.html",
+        "BlGameSdkRes/BLGameSdkModel.xcdatamodeld",
+    ],
+    "folders": [
+
+    ],    
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"]
+}

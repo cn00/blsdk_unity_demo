@@ -292,7 +292,7 @@ public class BuildScript
 
     #region 🍎安装包
 
-    [MenuItem("Build/iOS Dev (iL2cpp proj)")]
+    [MenuItem("Build/iOS (iL2cpp proj)")]
     static void ExportIOSProj()
     {
         var version = new FGVersion(PlayerSettings.bundleVersion);
