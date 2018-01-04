@@ -1,0 +1,3 @@
+[submodule "Assets/Editor/xup"]
+	path = Assets/Editor/xup
+	url = git@github.com:cn00/XUPorter.git
