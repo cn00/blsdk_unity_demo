@@ -69,7 +69,8 @@ extern Il2CppCodeGenString* _stringLiteral2513706167;
 extern Il2CppCodeGenString* _stringLiteral2521275683;
 extern Il2CppCodeGenString* _stringLiteral4055838506;
 extern const uint32_t BLSdkManager_initSDK_m1673278282_MetadataUsageId;
-extern Il2CppCodeGenString* _stringLiteral2383342477;
+extern Il2CppCodeGenString* _stringLiteral3833138170;
+extern Il2CppCodeGenString* _stringLiteral1904251082;
 extern const uint32_t BLSdkManager_SdkOpenLoginView_m3850923078_MetadataUsageId;
 extern Il2CppClass* DirCfgU5BU5D_t1589599465_il2cpp_TypeInfo_var;
 extern const uint32_t BundleConfig__ctor_m1367671489_MetadataUsageId;
@@ -359,9 +360,9 @@ extern "C"  void BLSdkManager_SdkOpenLoginView_m3850923078 (BLSdkManager_t138778
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral2383342477, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral3833138170, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
 		BLSdkManager_BLSdkOpenLoginView_m342583696(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral2383342477, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		Debug_LogFormat_m3816524933(NULL /*static, unused*/, _stringLiteral1904251082, ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
 		return;
 	}
 }

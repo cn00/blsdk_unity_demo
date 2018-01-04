@@ -37,7 +37,7 @@ public class BLSdkManager : MonoSingleton<BLSdkManager>
 
     public void SdkOpenLoginView()
     {
-		Debug.LogFormat ("csharp SdkOpenLoginView");
+		Debug.LogFormat ("csharp SdkOpenLoginView begin");
 		
 #if UNITY_IOS && !UNITY_EDITOR
 		BLSdkOpenLoginView();
@@ -46,7 +46,7 @@ public class BLSdkManager : MonoSingleton<BLSdkManager>
 #elif UNITY_STANDALONE && !UNITY_EDITOR
 
 #endif
-		Debug.LogFormat ("csharp SdkOpenLoginView");
+		Debug.LogFormat ("csharp SdkOpenLoginView end");
     }
 }
 #endif //UNITY_ANDROID || UNITY_IOS
