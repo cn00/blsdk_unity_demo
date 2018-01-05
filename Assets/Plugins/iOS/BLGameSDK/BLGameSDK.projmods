@@ -23,7 +23,16 @@
         },
     ],
     "libs": [],
-    "frameworks": [],
+    "frameworks": [
+        "CoreData.framework",
+        "Security.framework",
+        "AdSupport.framework",
+        "StoreKit.framework",
+        "SystemConfiguration.framework",
+        "CoreGraphics.framework",
+        "UIKit.framework",
+        "Foundation.framework",
+    ],
     "headerpaths": [],
     "plist": {
         "urltype" : [
@@ -32,7 +41,6 @@
                 "name" : "biligame",
                 "schemes":[
                     "biligame",
-                    "biligame2"
                 ]
             },
             {
